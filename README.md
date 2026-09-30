@@ -58,7 +58,7 @@
 Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出，完整指令亦可以在程式內使用「help」指令查詢，詳細功能以實際使用為準。
 
 <details>
-<summary>&emsp;Min</summary>
+<summary>├─ Min</summary>
 
 <br>
 
@@ -78,12 +78,12 @@ toptext <text|status item> - separate items with ;, wrapped/forced continuation 
 </details>
 
 <details>
-<summary>&emsp;Pro</summary>
+<summary>├─ Pro</summary>
 
 <br>
 
 <details>
-<summary>&emsp;&emsp;help</summary>
+<summary>│&nbsp;&nbsp;├─ help</summary>
 
 <br>
 
@@ -114,7 +114,7 @@ status - show date time battery device ram rom temp bright vol wifi data bluetoo
 </details>
 
 <details>
-<summary>&emsp;&emsp;accessibility</summary>
+<summary>│&nbsp;&nbsp;├─ accessibility</summary>
 
 <br>
 
@@ -134,7 +134,7 @@ x<number> y<number> - tap the screen at that point
 </details>
 
 <details>
-<summary>&emsp;&emsp;settings</summary>
+<summary>│&nbsp;&nbsp;└─ settings</summary>
 
 <br>
 
@@ -162,7 +162,7 @@ TMVB (timervibrate) 預設1000ms
 </details>
 
 <details>
-<summary>&emsp;Max</summary>
+<summary>└─ Max</summary>
 
 <br>
 
@@ -182,7 +182,7 @@ translate - power by Google ML Kit
 當然不同意也是可以的，只是需要權限的功能就無法使用。Pro跟Max一樣只列出相對Min、Pro多的部份。
 
 <details>
-<summary>&emsp;Min</summary>
+<summary>├─ Min</summary>
 
 <br>
 
@@ -191,7 +191,7 @@ translate - power by Google ML Kit
 </details>
 
 <details>
-<summary>&emsp;Pro</summary>
+<summary>├─ Pro</summary>
 
 <br>
 
@@ -205,7 +205,7 @@ translate - power by Google ML Kit
 </details>
 
 <details>
-<summary>&emsp;Max</summary>
+<summary>└─ Max</summary>
 
 <br>
 
@@ -331,7 +331,7 @@ This app has replaced roughly 15 apps on my phone, each of which I carefully han
 For Pro and Max, only commands new relative to Min and Pro are listed; identical features are not repeated. The full command list can also be queried within the app using the "help" command. Detailed functionality is subject to actual use.
 
 <details>
-<summary>&emsp;Min</summary>
+<summary>├─ Min</summary>
 
 <br>
 
@@ -351,12 +351,12 @@ toptext <text|status item> - separate items with ;, wrapped/forced continuation 
 </details>
 
 <details>
-<summary>&emsp;Pro</summary>
+<summary>├─ Pro</summary>
 
 <br>
 
 <details>
-<summary>&emsp;&emsp;help</summary>
+<summary>│&nbsp;&nbsp;├─ help</summary>
 
 <br>
 
@@ -387,7 +387,7 @@ status - show date time battery device ram rom temp bright vol wifi data bluetoo
 </details>
 
 <details>
-<summary>&emsp;&emsp;accessibility</summary>
+<summary>│&nbsp;&nbsp;├─ accessibility</summary>
 
 <br>
 
@@ -407,7 +407,7 @@ x<number> y<number> - tap the screen at that point
 </details>
 
 <details>
-<summary>&emsp;&emsp;settings</summary>
+<summary>│&nbsp;&nbsp;└─ settings</summary>
 
 <br>
 
@@ -435,7 +435,7 @@ TMVB (timervibrate) Default: 1000ms
 </details>
 
 <details>
-<summary>&emsp;Max</summary>
+<summary>└─ Max</summary>
 
 <br>
 
@@ -455,7 +455,7 @@ translate - powered by Google ML Kit
 Of course, you can decline them, but features that require those permissions won't be available. Pro and Max only list permissions beyond those of Min and Pro, respectively.
 
 <details>
-<summary>&emsp;Min</summary>
+<summary>├─ Min</summary>
 
 <br>
 
@@ -464,7 +464,7 @@ Detect nearby devices — reads Wi-Fi and Bluetooth status, though it seems like
 </details>
 
 <details>
-<summary>&emsp;Pro</summary>
+<summary>├─ Pro</summary>
 
 <br>
 
@@ -478,7 +478,7 @@ Accessibility — only accessibility features require the accessibility permissi
 </details>
 
 <details>
-<summary>&emsp;Max</summary>
+<summary>└─ Max</summary>
 
 <br>
 
