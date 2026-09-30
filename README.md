@@ -247,7 +247,7 @@ translate - power by Google ML Kit
 本程式經歷了約30天開發，105個版本更新，修正與微調了上萬個細節。若需要版本更新日誌或歷史版本的原始碼或apk做研究，請聯繫作者。如本程式出現了bug或界面不夠直覺的地方，或是對本程式有任何建議與疑問，也歡迎聯繫作者討論。
 
 **作者的聯絡方式：**
-Gmail：fanpao757@gmail.com
+Email：fanpao757@gmail.com
 先用Email聯絡，如果有必要或是通過了Dev審核，我才會給私人聯絡方式
 
 </details>
@@ -498,7 +498,7 @@ I hope some professionals will join, because regarding API quota management, I'd
 This app has gone through approximately 30 days of development, 105 version updates, and tens of thousands of detail corrections and tweaks. If you need version changelogs, historical source code, or APKs for research, please contact the author. If you encounter any bugs, find the interface unintuitive, or have any suggestions or questions about the app, you're also welcome to contact the author for discussion.
 
 **Author's Contact Information:**
-Gmail: fanpao757@gmail.com
+Email: fanpao757@gmail.com
 Please contact via email first. I will only provide private contact details if necessary or after you pass the Dev review.
 
 </details>
