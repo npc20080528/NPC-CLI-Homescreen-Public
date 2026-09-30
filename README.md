@@ -1,17 +1,20 @@
-# NPC-CLI-Homescreen-Public
-> **中文跟英文的語意是一樣的，只是作者英文比較不好（非母語使用者），所以先寫中文的介紹，用翻譯翻成英文後，依我想表達的語意微調用字，擇一閱讀即可，若有衝突，則以中文版本的為準。**
+> **中文跟英文的語意是一樣的，只是作者英文比較不好（非母語使用者），所以先寫中文的介紹，用翻譯翻成英文後，依我想表達的語意微調用字，擇一閱讀即可，若有衝突，則以中文為準。**
 >
-> **The Chinese and English versions convey the same meaning. The author is not a native English speaker, so the Chinese introduction was written first and then translated into English with minor wording adjustments to match the intended meaning. You only need to read one version; if there are any conflicts, the Chinese version takes precedence.**
+> **阿我看不太懂各種授權是什麼意思，就隨便設了一個，我的想法是檔案開源，非營利可以隨便用，若要營利請私訊作者討論細節。**
+> 
+> **The Chinese and English versions convey the same meaning. The author is not a native English speaker, so the Chinese introduction was written first and then translated into English with minor wording adjustments to match the intended meaning. You only need to read one; if there are any conflicts, the Chinese version takes precedence.**
+>
+> **Oh, and I don't really understand what all the different licenses mean, so I just picked one at random. My intention is: the code is open-source, free for any non-commercial use; for commercial use, please DM the author to discuss the details.**
 
 ---
 
 <details>
-<summary>🇹🇼 中文版（點擊展開）</summary>
+<summary><b>中文</b></summary>
 
 <br>
 
 <details>
-<summary>📌 程式起源與開發方式</summary>
+<summary>程式起源與開發方式</summary>
 
 <br>
 
@@ -20,19 +23,17 @@
 </details>
 
 <details>
-<summary>📌 程式簡介</summary>
+<summary>程式簡介</summary>
 
 <br>
 
 目前仍有許多地區在取得高性能運算裝置方面較為困難，作者也是從小使用中低階手機長大的，時常受到市面上遍地皆是的巨型臃腫程式荼毒，也持續有記憶體(ram)與儲存空間(rom)不夠用的問題，直到近幾年條件較好才有能力買較高階手機做開發，深諳性能不足之苦，所以一開始我只做我需要的功能，將省電、無動畫的快速載入與刷新、極低的性能需求與ram、rom佔用做為程式的主要設計語言，且儘量提供多一點兼容性，務讓極低階手機仍有一戰之力，延長其使用壽命。後來越做越多功能，說好聽是集各家所長，但好像快把我手機上所有不用聯網的功能都做上去了😂。
 
-總之所以後來要公開的時候，就分出了功能極致精簡的Min版跟全功能的Max版，然後Max版體積主要來自translate這個功能，所以如果想要Max版的豐富功能，又想要極致輕量化的體積，沒有本地翻譯功能的Max版本-Pro版就應運而生，體積不到Max版的1.2%(3)。
+總之所以後來要公開的時候，就分出了功能極致精簡的Min跟全功能的Max，然後Max體積主要來自translate這個功能，所以如果想要Max的豐富功能，又想要極致輕量化的體積，沒有本地翻譯功能的Pro就應運而生，體積不到Max的1.2%(3)。
 
-原本在安卓原生程式需要十數GB體積的功能，最後在我的濃縮下只要不到65MB(1)。另外，如果你不需要本地翻譯，不到800KB的Pro版(2)功能多樣性與完整性絕對超乎你的想像，若你只想要極小體積，也用不太到Pro版的各種複雜功能，則可以選擇Min版，體積可再減超過一半(4)。如只需要部份Pro版功能，又想要榨出每一分空間，可自行抓取原始碼做出各種功能排列組合的版本，若能力較弱，亦可誠心求取作者的幫助。(看情況幫，作者時間有限，希望不要太多請求)
+原本在安卓原生程式需要十數GB體積的功能，最後在我的濃縮下只要不到65MB(1)。另外，如果你不需要本地翻譯，不到800KB的Pro(2)功能多樣性與完整性絕對超乎你的想像，若你只想要極小體積，也用不太到Pro的各種複雜功能，則可以選擇Min，體積可再減超過一半(4)。如只需要部份Pro功能，又想要榨出每一分空間，可自行抓取原始碼做出各種功能排列組合的版本，若能力較弱，亦可誠心求取作者的幫助。(看情況幫，作者時間有限，希望不要太多請求)
 
-阿我看不太懂各種授權是什麼意思，就隨便設了一個，我的想法是檔案開源，非營利可以隨便用，若要營利請私訊作者討論細節。
-
-(1)、(2) 經作者實測，Min、Pro、Max版的apk體積分別是38KB、82KB、16.4MB，下載後未使用的rom佔用分別為135KB、271KB、17.6MB，Max版下載本地translate包後，程式rom佔用為60.9MB(約43.2MB的包在我手機上被當快取)，用termux將本程式的dex2oat改成speed之後，程式rom佔用分別為367KB、767KB、64.9MB，正常使用情境(speed-profile)下應介於兩者之間，實際大小因實際使用情境與不同裝置版本而有差異，應以實際體驗為準
+(1)、(2) 經作者實測，Min、Pro、Max的apk體積分別是38KB、82KB、16.4MB，下載後未使用的rom佔用分別為135KB、271KB、17.6MB，Max下載本地translate包後，程式rom佔用為60.9MB(約43.2MB的包在我手機上被當快取)，用termux將本程式的dex2oat改成speed之後，程式rom佔用分別為367KB、767KB、64.9MB，正常使用情境(speed-profile)下應介於兩者之間，實際大小因實際使用情境與不同裝置版本而有差異，應以實際體驗為準
 
 (3) 767/64900=0.01181818...
 
@@ -41,7 +42,7 @@
 </details>
 
 <details>
-<summary>📌 這個程式對我來說的意義</summary>
+<summary>這個程式對我來說的意義</summary>
 
 <br>
 
@@ -50,14 +51,14 @@
 </details>
 
 <details>
-<summary>📌 指令列表與簡介</summary>
+<summary>指令列表與簡介</summary>
 
 <br>
 
-Pro與Max版只列出相對Min與Pro的新增指令，相同功能不重複列出，完整指令亦可以在程式內使用「help」指令查詢，詳細功能以實際使用為準。
+Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出，完整指令亦可以在程式內使用「help」指令查詢，詳細功能以實際使用為準。
 
 <details>
-<summary>⌨️ Min版</summary>
+<summary>&emsp;Min</summary>
 
 <br>
 
@@ -77,11 +78,14 @@ toptext <text|status item> - separate items with ;, wrapped/forced continuation 
 </details>
 
 <details>
-<summary>⌨️ Pro版</summary>
+<summary>&emsp;Pro</summary>
 
 <br>
 
-**help：**
+<details>
+<summary>&emsp;&emsp;help</summary>
+
+<br>
 
 ```
 accessibility - list all accessibility features and explanations (enable "NPC's CLI Homescreen" in the system accessibility settings to use them)
@@ -107,7 +111,12 @@ settings - list all settings
 status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version(also can enter item name to check its individual status) ->亮度跟音量不是唯讀(read-only)了，其它可透過搭配自訂的alias與accessibility來達到調整的效果
 ```
 
-**accessibility：**
+</details>
+
+<details>
+<summary>&emsp;&emsp;accessibility</summary>
+
+<br>
 
 ```
 back - press the back button
@@ -122,7 +131,12 @@ vibrate - Adding vibration to the script appropriately can serve as a reminder
 x<number> y<number> - tap the screen at that point
 ```
 
-**settings：**
+</details>
+
+<details>
+<summary>&emsp;&emsp;settings</summary>
+
+<br>
 
 ```
 addtimems - status的time會加入三位毫秒(但好像不太準，參考就好，以實際體驗為準)，預設off
@@ -145,8 +159,10 @@ TMVB (timervibrate) 預設1000ms
 
 </details>
 
+</details>
+
 <details>
-<summary>⌨️ Max版</summary>
+<summary>&emsp;Max</summary>
 
 <br>
 
@@ -159,14 +175,14 @@ translate - power by Google ML Kit
 </details>
 
 <details>
-<summary>📌 權限需求</summary>
+<summary>權限需求</summary>
 
 <br>
 
-當然不同意也是可以的，只是需要權限的功能就無法使用。Pro跟Max一樣只列出相對min、Pro多的部份。
+當然不同意也是可以的，只是需要權限的功能就無法使用。Pro跟Max一樣只列出相對Min、Pro多的部份。
 
 <details>
-<summary>🔐 Min版</summary>
+<summary>&emsp;Min</summary>
 
 <br>
 
@@ -175,16 +191,21 @@ translate - power by Google ML Kit
 </details>
 
 <details>
-<summary>🔐 Pro版</summary>
+<summary>&emsp;Pro</summary>
 
 <br>
 
-讀取裝置檔案-music與rec功能使用，為了寫入與讀取的必要權限、通知-可以錄音跟播放音訊的程式在新版安卓好像都需要通知，才能證明是使用者主動要做的，不是程式在背景亂搞、麥克風-錄音就需要麥克風、調整權限-可以調整裝置亮度跟音量、震動-目前好像只有AOD的timer預設有震動，用到的地方不多，除非你在寫alias腳本時很常用到accessibility的vibrate、無障礙-只有無障礙功能需要無障礙權限
+讀取裝置檔案-music與rec功能使用，為了寫入與讀取的必要權限
+通知-可以錄音跟播放音訊的程式在新版安卓好像都需要通知，才能證明是使用者主動要做的，不是程式在背景亂搞
+麥克風-錄音就需要麥克風
+調整權限-可以調整裝置亮度跟音量
+震動-目前好像只有AOD的timer預設有震動，用到的地方不多，除非你在寫alias腳本時很常用到accessibility的vibrate
+無障礙-只有無障礙功能需要無障礙權限
 
 </details>
 
 <details>
-<summary>🔐 Max版</summary>
+<summary>&emsp;Max</summary>
 
 <br>
 
@@ -195,7 +216,7 @@ translate - power by Google ML Kit
 </details>
 
 <details>
-<summary>📌 目前已知問題</summary>
+<summary>目前已知問題</summary>
 
 <br>
 
@@ -204,7 +225,7 @@ translate - power by Google ML Kit
 </details>
 
 <details>
-<summary>📌 不同安卓版本差異</summary>
+<summary>不同安卓版本差異</summary>
 
 <br>
 
@@ -215,7 +236,7 @@ translate - power by Google ML Kit
 </details>
 
 <details>
-<summary>📌 目前考慮過的功能</summary>
+<summary>目前考慮過的功能</summary>
 
 <br>
 
@@ -227,21 +248,25 @@ translate - power by Google ML Kit
 
 **4. 本地PDF檔案閱讀：** 我曾使用我從2024年開始關注，程式製作當時剛發布 (2026 年 8 月 27 日發布)Android Jetpack PDF Viewer模組 (androidx.pdf)Beta版(1.0.0-beta01)，但不知為何debug了好幾個版本，不是當掉就是閃退，心態崩了，直接棄更這個功能，一樣求大神指路😭
 
-**5. 更好的兼容性：** 目前Min版支援安卓5-17，Pro與Max版支援安卓7-17，原本AI有給我v7a、v8a、X86、X86-64，最後我為了極小體積，加上我的初衷是為手機提供服務，最後只保留v8a。
--> 首先，X86可以輕鬆跑linux，其中有很多我覺得比我的程式更好用的分支版本，而且是真正的CLI(安卓運行時，看似表面是CLI，但實際運算與渲染的邏輯還是維持在十分耗電的GUI)，如果還覺得不好用，你的程度應該足以用LFS(linux from scratch)自己做了，我也就不用做了。
+**5. 更好的兼容性：** 從原本只支援安卓16，到目前已經拓展到Min支援安卓5-17，Pro與Max支援安卓7-17，原本AI有給我v7a、v8a、X86、X86-64，最後我為了極小體積，加上我的初衷是為手機提供服務，最後只保留v8a。
+-> 首先，X86可以輕鬆跑linux，其中有很多我覺得比我的程式更好用的分支版本，而且是真正的CLI(安卓運行時，看似表面是CLI，但實際運算與渲染的邏輯還是維持在十分耗電的GUI)，如果還是覺得不好用的人，程度應該足以用LFS(linux from scratch)自己做了，我也就不用做了。
 其次，安卓近幾年連幾個比較開放的手機廠商都越來越難root，只能維持在安卓原生版本的情況下，我覺得目前手機在這方面有產品斷層與空洞。
 最後，蘋果的權限控制好像比較複雜，抱歉了iphone用戶🥺，我曾經是有想讓你們可以用的，看未來生態能不能開放一點吧！
 
-**6. 用API抓天氣跟雲端AI：** 優點是在做到相同甚至更多、更好的功能的情況下，同時維持極小體積，缺點是需要網路，本來是想說做完全不需要網路的功能，但真的挺吸引人的，目前正以Pro版為基礎的Dev(未公開)版測試中，先嘗試了groq跟中央氣象署的API，還有什麼實用的API想推薦，或是想玩玩看Dev版都可以私訊作者
+**6. 用API抓天氣跟雲端AI：** 優點是在做到相同甚至更多、更好的功能的情況下，同時維持極小體積，缺點是需要網路，本來是想說做完全不需要網路的功能，但真的挺吸引人的，目前正以Pro為基礎的Dev(未公開)測試中，先嘗試了groq跟中央氣象署的API，還有什麼實用的API想推薦，或是想玩玩看Dev都可以私訊作者
+
+**7. 取得ADB權限：** 這個超讚，成功之後可以取代部份termux功能，trigger也能設定除了音量鍵以外的按鈕，但也是一樣做了好幾個版本之後一直沒有成功，如果需要這個功能的，我原本是用key mapper，推薦給你。雖然失敗了，但我還是覺得這個功能挺實用的，之後有空還是會考慮再嘗試看看，如果有大神願意幫忙，感激不盡
+
+**8. triggers可以排列組合形成新指令：** 目前問題是不好命名，目前音量鍵兩個，排列組合只要設兩種，但有些手機物理按鈕超多，排列組合是比指數快很多的階乘，兼具易讀性與極簡的命名很難找，不喜歡key mapper那種trigger 1：(動作1)、(動作2)的這種，而且參數調整不好時，指令間容易相互干擾，不適合一般人使用，未來會考慮在Dev做做看，但應該不會發布在公開版本
 
 </details>
 
 <details>
-<summary>📌 開發者招募與聯絡方式</summary>
+<summary>開發者招募與聯絡方式</summary>
 
 <br>
 
-想要加入開發者行列有幾個前提條件：(1)對Pro版的功能瞭若指掌(2)嚴格的背景審查(3)具有程式開發經驗或具程式邏輯
+想要加入開發者行列有幾個前提條件：(1)對Pro的功能瞭若指掌 (2)嚴格的背景審查 (3)具有程式開發經驗或具程式邏輯
 希望能有一些專業人士加入，因為關於API的額度管理我想朝去中心化的方向製作
 
 本程式經歷了約30天開發，105個版本更新，修正與微調了上萬個細節。若需要版本更新日誌或歷史版本的原始碼或apk做研究，請聯繫作者。如本程式出現了bug或界面不夠直覺的地方，或是對本程式有任何建議與疑問，也歡迎聯繫作者討論。
@@ -257,12 +282,12 @@ Email：fanpao757@gmail.com
 ---
 
 <details>
-<summary>🇬🇧 English (Click to Expand)</summary>
+<summary><b>English</b></summary>
 
 <br>
 
 <details>
-<summary>📌 Origin and Development Approach</summary>
+<summary>Origin and Development Approach</summary>
 
 <br>
 
@@ -271,19 +296,17 @@ I've tried many launchers, each with its own strengths, but I could never find o
 </details>
 
 <details>
-<summary>📌 Program Overview</summary>
+<summary>Program Overview</summary>
 
 <br>
 
 There are still many regions where obtaining high-performance computing devices remains difficult. The author also grew up using low- to mid-range phones, constantly plagued by the bloated, oversized apps that are everywhere on the market, and perpetually struggling with insufficient memory (RAM) and storage (ROM). It wasn't until recent years, when my circumstances improved, that I could afford a higher-end phone for development. Having deeply experienced the pain of inadequate performance, I initially only built the features I needed, making power efficiency, animation-free fast loading and refreshing, and extremely low demands on performance, RAM, and ROM the core design principles of the app. I also tried to provide as much compatibility as possible, ensuring that even very low-end phones could still hold their own and extend their usable lifespan. Later, I kept adding more and more features — to put it nicely, I gathered the best of all worlds, but it feels like I've basically crammed every offline function from all the apps on my phone into this one 😂.
 
-Anyway, when it came time to release it publicly, I split it into an ultra-minimalist Min version and a full-featured Max version. The bulk of the Max version's size comes from the translate feature, so for those who want the rich functionality of Max but also want an ultra-lightweight footprint, the Pro version — a Max version without local translation — was born, with a size less than 1.2% of the Max version(3).
+Anyway, when it came time to release it publicly, I split it into an ultra-minimalist Min and a full-featured Max. The bulk of Max's size comes from the translate feature, so for those who want the rich functionality of Max but also want an ultra-lightweight footprint, Pro — a Max without local translation — was born, with a size less than 1.2% of Max(3).
 
-Features that would normally require over ten GB in a native Android app were condensed by me down to under 65 MB(1). Additionally, if you don't need local translation, the Pro version(2) at under 800 KB offers a diversity and completeness of features that will absolutely exceed your expectations. If you only want an extremely small footprint and don't really need the various complex features of the Pro version, you can choose the Min version, which reduces the size by more than half again(4). If you only need some of the Pro version's features and want to squeeze out every last byte of space, you can grab the source code and build your own version with any combination of features. If your skills are limited, you're also welcome to sincerely ask the author for help. (Help is provided on a case-by-case basis; the author's time is limited, so please don't send too many requests.)
+Features that would normally require over ten GB in a native Android app were condensed by me down to under 65 MB(1). Additionally, if you don't need local translation, Pro(2) at under 800 KB offers a diversity and completeness of features that will absolutely exceed your expectations. If you only want an extremely small footprint and don't really need the various complex features of Pro, you can choose Min, which reduces the size by more than half again(4). If you only need some of Pro's features and want to squeeze out every last byte of space, you can grab the source code and build your own variant with any combination of features. If your skills are limited, you're also welcome to sincerely ask the author for help. (Help is provided on a case-by-case basis; the author's time is limited, so please don't send too many requests.)
 
-Oh, and I don't really understand what all the different licenses mean, so I just picked one at random. My intention is: the code is open-source, free for any non-commercial use; for commercial use, please DM the author to discuss the details.
-
-(1)(2) Based on the author's actual testing, the APK sizes of the Min, Pro, and Max versions are 38 KB, 82 KB, and 16.4 MB respectively. After installation (unused), ROM usage is 135 KB, 271 KB, and 17.6 MB respectively. After the Max version downloads the local translate package, the app's ROM usage is 60.9 MB (the ~43.2 MB package is treated as cache on my phone). After using Termux to change this app's dex2oat mode to "speed," ROM usage becomes 367 KB, 767 KB, and 64.9 MB respectively. Under normal usage conditions (speed-profile), it should fall somewhere between these two extremes. Actual sizes vary depending on real usage scenarios and different device versions, so actual experience should be the reference.
+(1)(2) Based on the author's actual testing, the APK sizes of Min, Pro, and Max are 38 KB, 82 KB, and 16.4 MB respectively. After installation (unused), ROM usage is 135 KB, 271 KB, and 17.6 MB respectively. After Max downloads the local translate package, the app's ROM usage is 60.9 MB (the ~43.2 MB package is treated as cache on my phone). After using Termux to change this app's dex2oat mode to "speed," ROM usage becomes 367 KB, 767 KB, and 64.9 MB respectively. Under normal usage conditions (speed-profile), it should fall somewhere between these two extremes. Actual sizes vary depending on real usage scenarios and different device versions, so actual experience should be the reference.
 
 (3) 767 / 64900 = 0.01181818...
 
@@ -292,7 +315,7 @@ Oh, and I don't really understand what all the different licenses mean, so I jus
 </details>
 
 <details>
-<summary>📌 What This App Means to Me</summary>
+<summary>What This App Means to Me</summary>
 
 <br>
 
@@ -301,14 +324,14 @@ This app has replaced roughly 15 apps on my phone, each of which I carefully han
 </details>
 
 <details>
-<summary>📌 Command List and Brief Descriptions</summary>
+<summary>Command List and Brief Descriptions</summary>
 
 <br>
 
-For Pro and Max versions, only commands new relative to Min and Pro are listed; identical features are not repeated. The full command list can also be queried within the app using the "help" command. Detailed functionality is subject to actual use.
+For Pro and Max, only commands new relative to Min and Pro are listed; identical features are not repeated. The full command list can also be queried within the app using the "help" command. Detailed functionality is subject to actual use.
 
 <details>
-<summary>⌨️ Min Version</summary>
+<summary>&emsp;Min</summary>
 
 <br>
 
@@ -328,11 +351,14 @@ toptext <text|status item> - separate items with ;, wrapped/forced continuation 
 </details>
 
 <details>
-<summary>⌨️ Pro Version</summary>
+<summary>&emsp;Pro</summary>
 
 <br>
 
-**help:**
+<details>
+<summary>&emsp;&emsp;help</summary>
+
+<br>
 
 ```
 accessibility - list all accessibility features and explanations (enable "NPC's CLI Homescreen" in the system accessibility settings to use them)
@@ -358,7 +384,12 @@ settings - list all settings
 status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version (also can enter item name to check its individual status) -> Brightness and volume are no longer read-only; other items can be adjusted by combining custom aliases with accessibility features.
 ```
 
-**accessibility:**
+</details>
+
+<details>
+<summary>&emsp;&emsp;accessibility</summary>
+
+<br>
 
 ```
 back - press the back button
@@ -373,7 +404,12 @@ vibrate - Adding vibration to the script appropriately can serve as a reminder
 x<number> y<number> - tap the screen at that point
 ```
 
-**settings:**
+</details>
+
+<details>
+<summary>&emsp;&emsp;settings</summary>
+
+<br>
 
 ```
 addtimems - The time in status will include three-digit milliseconds (though it doesn't seem very accurate, so take it as a rough reference; actual experience may vary). Default: off
@@ -396,8 +432,10 @@ TMVB (timervibrate) Default: 1000ms
 
 </details>
 
+</details>
+
 <details>
-<summary>⌨️ Max Version</summary>
+<summary>&emsp;Max</summary>
 
 <br>
 
@@ -410,14 +448,14 @@ translate - powered by Google ML Kit
 </details>
 
 <details>
-<summary>📌 Permission Requirements</summary>
+<summary>Permission Requirements</summary>
 
 <br>
 
 Of course, you can decline them, but features that require those permissions won't be available. Pro and Max only list permissions beyond those of Min and Pro, respectively.
 
 <details>
-<summary>🔐 Min Version</summary>
+<summary>&emsp;Min</summary>
 
 <br>
 
@@ -426,16 +464,21 @@ Detect nearby devices — reads Wi-Fi and Bluetooth status, though it seems like
 </details>
 
 <details>
-<summary>🔐 Pro Version</summary>
+<summary>&emsp;Pro</summary>
 
 <br>
 
-Read device files — used by the music and rec features; a necessary permission for reading and writing. Notifications — apps that can record and play audio seem to require notification permission on newer Android versions to prove the user initiated the action and the app isn't doing things in the background. Microphone — recording requires the microphone. Adjust settings — allows adjusting device brightness and volume. Vibration — currently only the AOD timer has vibration enabled by default; not used in many places unless you frequently use the accessibility vibrate command in your alias scripts. Accessibility — only accessibility features require the accessibility permission.
+Read device files — used by the music and rec features; a necessary permission for reading and writing.
+Notifications — apps that can record and play audio seem to require notification permission on newer Android versions to prove the user initiated the action and the app isn't doing things in the background.
+Microphone — recording requires the microphone.
+Adjust settings — allows adjusting device brightness and volume.
+Vibration — currently only the AOD timer has vibration enabled by default; not used in many places unless you frequently use the accessibility vibrate command in your alias scripts.
+Accessibility — only accessibility features require the accessibility permission.
 
 </details>
 
 <details>
-<summary>🔐 Max Version</summary>
+<summary>&emsp;Max</summary>
 
 <br>
 
@@ -446,7 +489,7 @@ It seems network permission is needed for downloading the local translation pack
 </details>
 
 <details>
-<summary>📌 Currently Known Issues</summary>
+<summary>Currently Known Issues</summary>
 
 <br>
 
@@ -455,7 +498,7 @@ It seems network permission is needed for downloading the local translation pack
 </details>
 
 <details>
-<summary>📌 Differences Across Android Versions</summary>
+<summary>Differences Across Android Versions</summary>
 
 <br>
 
@@ -466,7 +509,7 @@ It seems network permission is needed for downloading the local translation pack
 </details>
 
 <details>
-<summary>📌 Features I've Considered</summary>
+<summary>Features I've Considered</summary>
 
 <br>
 
@@ -478,21 +521,25 @@ It seems network permission is needed for downloading the local translation pack
 
 **4. Local PDF file reading:** I tried using the Android Jetpack PDF Viewer module (androidx.pdf) Beta (1.0.0-beta01), which I had been following since 2024 and which was just released (August 27, 2026) around the time I was building the app. But for some reason, after debugging through several versions, it either froze or crashed. I lost my sanity and abandoned this feature entirely. Once again, begging for an expert's guidance 😭
 
-**5. Better compatibility:** Currently, the Min version supports Android 5–17, while Pro and Max support Android 7–17. Originally, the AI gave me builds for v7a, v8a, x86, and x86-64, but in the end, to keep the size as small as possible and since my original intention was to serve phones, I kept only v8a.
--> First, x86 can easily run Linux, which has many forked distributions that I think are better than my app, and they're true CLI (when running on Android, the surface may look like CLI, but the actual computation and rendering logic still operates within the very power-hungry GUI). If you still find those unsatisfactory, your skill level is probably sufficient to build your own with LFS (Linux From Scratch), so there's no need for me to bother.
+**5. Better compatibility:** Starting from supporting only Android 16, the app has now expanded to support Android 5–17 for Min, and Android 7–17 for Pro and Max. Originally, the AI gave me builds for v7a, v8a, x86, and x86-64, but in the end, to keep the size as small as possible and since my original intention was to serve phones, I kept only v8a.
+-> First, x86 can easily run Linux, which has many forked distributions that I think are better than my app, and they're true CLI (when running on Android, the surface may look like CLI, but the actual computation and rendering logic still operates within the very power-hungry GUI). Those who still find those unsatisfactory should have enough skill to build their own with LFS (Linux From Scratch), so there's no need for me to bother.
 Second, in recent years, even the more open phone manufacturers have made rooting increasingly difficult. Under the constraint of staying on stock Android, I feel there's currently a product gap and void in this area for phones.
 Lastly, Apple's permission controls seem quite complex. Sorry, iPhone users 🥺 — I did once want to make this available to you. Let's see if the ecosystem opens up a bit in the future!
 
-**6. Using APIs for weather and cloud AI:** The advantage is achieving the same or even more and better features while maintaining an ultra-small footprint. The downside is that it requires an internet connection. I originally intended to build a completely offline app, but this is really quite appealing. Currently being tested in a Dev (unreleased) version based on the Pro version. I've tried the Groq and Central Weather Administration APIs so far. If you have any useful APIs to recommend or want to try out the Dev version, feel free to DM the author.
+**6. Using APIs for weather and cloud AI:** The advantage is achieving the same or even more and better features while maintaining an ultra-small footprint. The downside is that it requires an internet connection. I originally intended to build a completely offline app, but this is really quite appealing. Currently being tested in a Dev (unreleased) build based on Pro. I've tried the Groq and Central Weather Administration APIs so far. If you have any useful APIs to recommend or want to try out Dev, feel free to DM the author.
+
+**7. Obtaining ADB permissions:** This one is amazing — if successful, it could replace part of Termux's functionality, and triggers could be set for buttons other than the volume keys. But similarly, after several iterations, I never got it working. If you need this feature, I originally used Key Mapper — recommended. Although I failed, I still think this feature is quite practical, so I might try again when I have time. If any experts are willing to help, I'd be extremely grateful.
+
+**8. Combining triggers to form new commands:** The current problem is that they're hard to name. With just two volume keys, only two combinations need to be defined, but some phones have tons of physical buttons, and the combinations grow factorially — much faster than exponentially. It's very hard to find naming schemes that are both readable and minimal. I don't like Key Mapper's style of "trigger 1: (action 1), (action 2)," and when parameters aren't tuned well, commands can easily interfere with each other, making it unsuitable for general users. I'll consider giving it a shot in the Dev build in the future, but it likely won't be released in the public version.
 
 </details>
 
 <details>
-<summary>📌 Developer Recruitment and Contact</summary>
+<summary>Developer Recruitment and Contact</summary>
 
 <br>
 
-**Prerequisites for joining the development team:** (1) Thorough familiarity with the Pro version's features (2) Strict background screening (3) Programming development experience or programming logic skills.
+**Prerequisites for joining the development team:** (1) Thorough familiarity with Pro's features (2) Strict background screening (3) Programming development experience or programming logic skills.
 I hope some professionals will join, because regarding API quota management, I'd like to move in a decentralized direction.
 
 This app has gone through approximately 30 days of development, 105 version updates, and tens of thousands of detail corrections and tweaks. If you need version changelogs, historical source code, or APKs for research, please contact the author. If you encounter any bugs, find the interface unintuitive, or have any suggestions or questions about the app, you're also welcome to contact the author for discussion.
