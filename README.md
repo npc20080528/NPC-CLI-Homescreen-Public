@@ -57,120 +57,120 @@
 
 Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出，完整指令亦可以在程式內使用「help」指令查詢，詳細功能以實際使用為準。
 
-<details>
-<summary>├─ Min</summary>
-
-<br>
-
-```
-alias - list all aliases or alias <name> <command> to set alias (use ; to set multiple)
-alias <name> - view one alias
-<app name> - launch an app (use exact name)
-apps - list installed apps
-help - show this list
-rm <alias name|toptext> - delete item
-status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version, enter an item name to check its individual status (view only)
-color (above|below|background) - 可使用Hex色碼修改上方、下方、背景顏色，預設#FFFFFF|#00FF00|#000000
-fontsize - 可修改文字顯示大小，範圍為8-40間的正整數，預設18
-toptext <text|status item> - separate items with ;, wrapped/forced continuation lines start with |; use ;; to force a line break
-```
-
-</details>
-
-<details>
-<summary>├─ Pro</summary>
-
-<br>
-
-<details>
-<summary>│&nbsp;&nbsp;├─ help</summary>
-
-<br>
-
-```
-accessibility - list all accessibility features and explanations (enable "NPC's CLI Homescreen" in the system accessibility settings to use them)
-AOD - show full screen clock or timer or stopwatch
-BPM <non-negative integer> - start the metronome; BPM 0 stops it
-calc <expression> - use calculator powered by exp4j library
-calcs - show calculation history
-compass - show the current heading (degrees, 16-point direction)
-<date> - show that day's weekday(15821015-99991231) and lunar date (20260217-20560214)
-flash - show the torch state; add [on|1|off|0|toggle|-1] to switch
-gestures - show all gestures and their commands
-jot <name> <content> - write a note
-jotting <name> - view a note
-jottings - list all notes and their contents
-map|playstore|trans|yt <keyword> - search inside that app, web version as fallback
-music - show playback, add [on|1|off|0|toggle|-1] to play local tracks (input prev or next to switch)
-musics - list local audio files, then type a number to play
-rec [on|1|off|0|toggle|-1] - record voice
-recs - list recordings, then type a number to play
-rm <item> - delete item (alias|calcs|gesture|history|jotting|toptext)
-search <keyword> - search with the default engine (URL open directly)
-settings - list all settings
-status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version(also can enter item name to check its individual status) ->亮度跟音量不是唯讀(read-only)了，其它可透過搭配自訂的alias與accessibility來達到調整的效果
-```
-
-</details>
-
-<details>
-<summary>│&nbsp;&nbsp;├─ accessibility</summary>
-
-<br>
-
-```
-back - press the back button
-home - press the home button
-quicksettings - open the quick-settings panel
-recents - open the recent apps overview
-statusbar - expand the notification shade
-trigger - listen for a pressed key and assign tap/2tap/hold commands to it
-triggers - list every key and switch them all on or off
-wait - pause that long before the next command (; separates the commands)
-vibrate - Adding vibration to the script appropriately can serve as a reminder
-x<number> y<number> - tap the screen at that point
-```
-
-</details>
-
-<details>
-<summary>│&nbsp;&nbsp;└─ settings</summary>
-
-<br>
-
-```
-addtimems - status的time會加入三位毫秒(但好像不太準，參考就好，以實際體驗為準)，預設off
-batterystyle - 電量顯示可選數字(num)或是四捨五入的方塊，有兩種方塊，一種是有總格數個方塊，實心方塊是剩餘電量，空心則是沒有的電量(mix)，另一種則是不顯示空心方塊(sol)，亦可自定總方塊數量
-history - 以txt檔紀錄使用者輸入文字的歷史紀錄，預設off
-holdtime 預設: 500ms max2tapgap 預設: 300ms
-musicautooff <always|auto|none> (預設: auto) - 在設定的情況發生時，自動停止在本程式播放的本地音樂，防止社死的好東西(别問我為什麼會知道，或是為什麼要做這個功能) always = no connected Bluetooth audio device, auto = Bluetooth on-to-off, none = never
-musicfolder、recfolder - 可設定本地音樂讀取的資料夾和錄音檔存放的資料夾
-refreshspeed (time|compass|other) - 設定項目的刷新時間，預設1000ms|500ms|1s
-swipepx 預設 105 tempunit 預設 °C
-toptextshow (music|rec|bpm) - 在music、rec、bpm播放時顯示在toptext，預設都是on
-
-AOD holdtime 預設500ms
-AODcolor (number|background) 預設 #00FF00|#000000
-AODmax2tapgap 預設300ms
-TMFS (timerflash) 預設3
-TMFSgap (timerflashgap) 預設0ms(代表閃爍總時間與振動時間一樣長，若不要閃爍請將TMFS設為0)
-TMVB (timervibrate) 預設1000ms
-```
-
-</details>
-
-</details>
-
-<details>
-<summary>└─ Max</summary>
-
-<br>
-
-```
-translate - power by Google ML Kit
-```
-
-</details>
+> <details>
+> <summary>Min</summary>
+> 
+> <br>
+> 
+> ```
+> alias - list all aliases or alias <name> <command> to set alias (use ; to set multiple)
+> alias <name> - view one alias
+> <app name> - launch an app (use exact name)
+> apps - list installed apps
+> help - show this list
+> rm <alias name|toptext> - delete item
+> status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version, enter an item name to check its individual status (view only)
+> color (above|below|background) - 可使用Hex色碼修改上方、下方、背景顏色，預設#FFFFFF|#00FF00|#000000
+> fontsize - 可修改文字顯示大小，範圍為8-40間的正整數，預設18
+> toptext <text|status item> - separate items with ;, wrapped/forced continuation lines start with |; use ;; to force a line break
+> ```
+> 
+> </details>
+> 
+> <details>
+> <summary>Pro</summary>
+> 
+> <br>
+> 
+> > <details>
+> > <summary>help</summary>
+> > 
+> > <br>
+> > 
+> > ```
+> > accessibility - list all accessibility features and explanations (enable "NPC's CLI Homescreen" in the system accessibility settings to use them)
+> > AOD - show full screen clock or timer or stopwatch
+> > BPM <non-negative integer> - start the metronome; BPM 0 stops it
+> > calc <expression> - use calculator powered by exp4j library
+> > calcs - show calculation history
+> > compass - show the current heading (degrees, 16-point direction)
+> > <date> - show that day's weekday(15821015-99991231) and lunar date (20260217-20560214)
+> > flash - show the torch state; add [on|1|off|0|toggle|-1] to switch
+> > gestures - show all gestures and their commands
+> > jot <name> <content> - write a note
+> > jotting <name> - view a note
+> > jottings - list all notes and their contents
+> > map|playstore|trans|yt <keyword> - search inside that app, web version as fallback
+> > music - show playback, add [on|1|off|0|toggle|-1] to play local tracks (input prev or next to switch)
+> > musics - list local audio files, then type a number to play
+> > rec [on|1|off|0|toggle|-1] - record voice
+> > recs - list recordings, then type a number to play
+> > rm <item> - delete item (alias|calcs|gesture|history|jotting|toptext)
+> > search <keyword> - search with the default engine (URL open directly)
+> > settings - list all settings
+> > status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version(also can enter item name to check its individual status) ->亮度跟音量不是唯讀(read-only)了，其它可透過搭配自訂的alias與accessibility來達到調整的效果
+> > ```
+> > 
+> > </details>
+> > 
+> > <details>
+> > <summary>accessibility</summary>
+> > 
+> > <br>
+> > 
+> > ```
+> > back - press the back button
+> > home - press the home button
+> > quicksettings - open the quick-settings panel
+> > recents - open the recent apps overview
+> > statusbar - expand the notification shade
+> > trigger - listen for a pressed key and assign tap/2tap/hold commands to it
+> > triggers - list every key and switch them all on or off
+> > wait - pause that long before the next command (; separates the commands)
+> > vibrate - Adding vibration to the script appropriately can serve as a reminder
+> > x<number> y<number> - tap the screen at that point
+> > ```
+> > 
+> > </details>
+> > 
+> > <details>
+> > <summary>settings</summary>
+> > 
+> > <br>
+> > 
+> > ```
+> > addtimems - status的time會加入三位毫秒(但好像不太準，參考就好，以實際體驗為準)，預設off
+> > batterystyle - 電量顯示可選數字(num)或是四捨五入的方塊，有兩種方塊，一種是有總格數個方塊，實心方塊是剩餘電量，空心則是沒有的電量(mix)，另一種則是不顯示空心方塊(sol)，亦可自定總方塊數量
+> > history - 以txt檔紀錄使用者輸入文字的歷史紀錄，預設off
+> > holdtime 預設: 500ms max2tapgap 預設: 300ms
+> > musicautooff <always|auto|none> (預設: auto) - 在設定的情況發生時，自動停止在本程式播放的本地音樂，防止社死的好東西(别問我為什麼會知道，或是為什麼要做這個功能) always = no connected Bluetooth audio device, auto = Bluetooth on-to-off, none = never
+> > musicfolder、recfolder - 可設定本地音樂讀取的資料夾和錄音檔存放的資料夾
+> > refreshspeed (time|compass|other) - 設定項目的刷新時間，預設1000ms|500ms|1s
+> > swipepx 預設 105 tempunit 預設 °C
+> > toptextshow (music|rec|bpm) - 在music、rec、bpm播放時顯示在toptext，預設都是on
+> > 
+> > AOD holdtime 預設500ms
+> > AODcolor (number|background) 預設 #00FF00|#000000
+> > AODmax2tapgap 預設300ms
+> > TMFS (timerflash) 預設3
+> > TMFSgap (timerflashgap) 預設0ms(代表閃爍總時間與振動時間一樣長，若不要閃爍請將TMFS設為0)
+> > TMVB (timervibrate) 預設1000ms
+> > ```
+> > 
+> > </details>
+> 
+> </details>
+> 
+> <details>
+> <summary>Max</summary>
+> 
+> <br>
+> 
+> ```
+> translate - power by Google ML Kit
+> ```
+> 
+> </details>
 
 </details>
 
@@ -181,37 +181,42 @@ translate - power by Google ML Kit
 
 當然不同意也是可以的，只是需要權限的功能就無法使用。Pro跟Max一樣只列出相對Min、Pro多的部份。
 
-<details>
-<summary>├─ Min</summary>
-
-<br>
-
-偵測附近裝置-讀取wifi與藍牙狀態，但好像不同意也能偵測🤔
-
-</details>
-
-<details>
-<summary>├─ Pro</summary>
-
-<br>
-
-讀取裝置檔案-music與rec功能使用，為了寫入與讀取的必要權限
-通知-可以錄音跟播放音訊的程式在新版安卓好像都需要通知，才能證明是使用者主動要做的，不是程式在背景亂搞
-麥克風-錄音就需要麥克風
-調整權限-可以調整裝置亮度跟音量
-震動-目前好像只有AOD的timer預設有震動，用到的地方不多，除非你在寫alias腳本時很常用到accessibility的vibrate
-無障礙-只有無障礙功能需要無障礙權限
-
-</details>
-
-<details>
-<summary>└─ Max</summary>
-
-<br>
-
-好像為了下載本地翻譯包有網路權限，但其它地方用不到
-
-</details>
+> <details>
+> <summary>Min</summary>
+> 
+> <br>
+> 
+> 偵測附近裝置 - 讀取wifi與藍牙狀態，但好像不同意也能偵測🤔
+> 
+> </details>
+> 
+> <details>
+> <summary>Pro</summary>
+> 
+> <br>
+> 
+> 讀取裝置檔案 - music與rec功能使用，為了寫入與讀取的必要權限
+> 
+> 通知 - 可以錄音跟播放音訊的程式在新版安卓好像都需要通知，才能證明是使用者主動要做的，不是程式在背景亂搞
+> 
+> 麥克風 - 錄音就需要麥克風
+> 
+> 調整權限 - 可以調整裝置亮度跟音量
+> 
+> 震動 - 目前好像只有AOD的timer預設有震動，用到的地方不多，除非你在寫alias腳本時很常用到accessibility的vibrate
+> 
+> 無障礙 - 只有無障礙功能需要無障礙權限
+> 
+> </details>
+> 
+> <details>
+> <summary>Max</summary>
+> 
+> <br>
+> 
+> 好像為了下載本地翻譯包有網路權限，但其它地方用不到
+> 
+> </details>
 
 </details>
 
@@ -240,24 +245,83 @@ translate - power by Google ML Kit
 
 <br>
 
-**1. 多語言：** 雖然作者是中文母語使用者，且英文超爛🤡，早期版本曾經想要做多語言，從英文、繁體中文、簡體中文開始，之後再看還有什麼需求，但後來功能越做越多，越做越複雜，有些指令翻成中文會變得挺複雜的，甚至有些我根本不知道怎麼翻💀，加上還要寫一堆映射指令，會大幅增加程式體積，也會降低運行效率，所以為了極致的效率，最後還是決定全英文，這個功能作者是不會更新的
-
-**2. 修改jottings存放的位置：** 就像musicfolder、recfolder一樣，作者曾經作過jottingsfolder，但不論我怎麼試，程式改了幾次，都讀不到這個程式的txt檔案，後來就放棄了，坐等大神指點迷津
-
-**3. 簡單的離線遊戲：** 像是貪食蛇、俄羅斯方塊之類的遊戲，在這個CLI界面可以很好的呈現，但作者不玩遊戲，做出來頂多玩一下就放著生灰了，遊戲內判斷的指令也不少，我有預感如果要統一設計語言，我會debug到崩潰，然後還是一樣有增加體積的問題，目前暫時不考慮更新
-
-**4. 本地PDF檔案閱讀：** 我曾使用我從2024年開始關注，程式製作當時剛發布 (2026 年 8 月 27 日發布)Android Jetpack PDF Viewer模組 (androidx.pdf)Beta版(1.0.0-beta01)，但不知為何debug了好幾個版本，不是當掉就是閃退，心態崩了，直接棄更這個功能，一樣求大神指路😭
-
-**5. 更好的兼容性：** 從原本只支援安卓16，到目前已經拓展到Min支援安卓5-17，Pro與Max支援安卓7-17，原本AI有給我v7a、v8a、X86、X86-64，最後我為了極小體積，加上我的初衷是為手機提供服務，最後只保留v8a。
--> 首先，X86可以輕鬆跑linux，其中有很多我覺得比我的程式更好用的分支版本，而且是真正的CLI(安卓運行時，看似表面是CLI，但實際運算與渲染的邏輯還是維持在十分耗電的GUI)，如果還是覺得不好用的人，程度應該足以用LFS(linux from scratch)自己做了，我也就不用做了。
-其次，安卓近幾年連幾個比較開放的手機廠商都越來越難root，只能維持在安卓原生版本的情況下，我覺得目前手機在這方面有產品斷層與空洞。
-最後，蘋果的權限控制好像比較複雜，抱歉了iphone用戶🥺，我曾經是有想讓你們可以用的，看未來生態能不能開放一點吧！
-
-**6. 用API抓天氣跟雲端AI：** 優點是在做到相同甚至更多、更好的功能的情況下，同時維持極小體積，缺點是需要網路，本來是想說做完全不需要網路的功能，但真的挺吸引人的，目前正以Pro為基礎的Dev(未公開)測試中，先嘗試了groq跟中央氣象署的API，還有什麼實用的API想推薦，或是想玩玩看Dev都可以私訊作者
-
-**7. 取得ADB權限：** 這個超讚，成功之後可以取代部份termux功能，trigger也能設定除了音量鍵以外的按鈕，但也是一樣做了好幾個版本之後一直沒有成功，如果需要這個功能的，我原本是用key mapper，推薦給你。雖然失敗了，但我還是覺得這個功能挺實用的，之後有空還是會考慮再嘗試看看，如果有大神願意幫忙，感激不盡
-
-**8. triggers可以排列組合形成新指令：** 目前問題是不好命名，目前音量鍵兩個，排列組合只要設兩種，但有些手機物理按鈕超多，排列組合是比指數快很多的階乘，兼具易讀性與極簡的命名很難找，不喜歡key mapper那種trigger 1：(動作1)、(動作2)的這種，而且參數調整不好時，指令間容易相互干擾，不適合一般人使用，未來會考慮在Dev做做看，但應該不會發布在公開版本
+> <details>
+> <summary>1. 多語言</summary>
+> 
+> <br>
+> 
+> 雖然作者是中文母語使用者，且英文超爛🤡，早期版本曾經想要做多語言，從英文、繁體中文、簡體中文開始，之後再看還有什麼需求，但後來功能越做越多，越做越複雜，有些指令翻成中文會變得挺複雜的，甚至有些我根本不知道怎麼翻💀，加上還要寫一堆映射指令，會大幅增加程式體積，也會降低運行效率，所以為了極致的效率，最後還是決定全英文，這個功能作者是不會更新的
+> 
+> </details>
+> 
+> <details>
+> <summary>2. 修改jottings存放的位置</summary>
+> 
+> <br>
+> 
+> 就像musicfolder、recfolder一樣，作者曾經作過jottingsfolder，但不論我怎麼試，程式改了幾次，都讀不到這個程式的txt檔案，後來就放棄了，坐等大神指點迷津
+> 
+> </details>
+> 
+> <details>
+> <summary>3. 簡單的離線遊戲</summary>
+> 
+> <br>
+> 
+> 像是貪食蛇、俄羅斯方塊之類的遊戲，在這個CLI界面可以很好的呈現，但作者不玩遊戲，做出來頂多玩一下就放著生灰了，遊戲內判斷的指令也不少，我有預感如果要統一設計語言，我會debug到崩潰，然後還是一樣有增加體積的問題，目前暫時不考慮更新
+> 
+> </details>
+> 
+> <details>
+> <summary>4. 本地PDF檔案閱讀</summary>
+> 
+> <br>
+> 
+> 我曾使用我從2024年開始關注，程式製作當時剛發布 (2026 年 8 月 27 日發布)Android Jetpack PDF Viewer模組 (androidx.pdf)Beta版(1.0.0-beta01)，但不知為何debug了好幾個版本，不是當掉就是閃退，心態崩了，直接棄更這個功能，一樣求大神指路😭
+> 
+> </details>
+> 
+> <details>
+> <summary>5. 更好的兼容性</summary>
+> 
+> <br>
+> 
+> 從原本只支援安卓16，到目前已經拓展到Min支援安卓5-17，Pro與Max支援安卓7-17，原本AI有給我v7a、v8a、X86、X86-64，最後我為了極小體積，加上我的初衷是為手機提供服務，最後只保留v8a。
+> 
+> -> 首先，X86可以輕鬆跑linux，其中有很多我覺得比我的程式更好用的分支版本，而且是真正的CLI(安卓運行時，看似表面是CLI，但實際運算與渲染的邏輯還是維持在十分耗電的GUI)，如果還是覺得不好用的人，程度應該足以用LFS(linux from scratch)自己做了，我也就不用做了。
+> 
+> 其次，安卓近幾年連幾個比較開放的手機廠商都越來越難root，只能維持在安卓原生版本的情況下，我覺得目前手機在這方面有產品斷層與空洞。
+> 
+> 最後，蘋果的權限控制好像比較複雜，抱歉了iphone用戶🥺，我曾經是有想讓你們可以用的，看未來生態能不能開放一點吧！
+> 
+> </details>
+> 
+> <details>
+> <summary>6. 用API抓天氣跟雲端AI</summary>
+> 
+> <br>
+> 
+> 優點是在做到相同甚至更多、更好的功能的情況下，同時維持極小體積，缺點是需要網路，本來是想說做完全不需要網路的功能，但真的挺吸引人的，目前正以Pro為基礎的Dev(未公開)測試中，先嘗試了groq跟中央氣象署的API，還有什麼實用的API想推薦，或是想玩玩看Dev都可以私訊作者
+> 
+> </details>
+> 
+> <details>
+> <summary>7. 取得ADB權限</summary>
+> 
+> <br>
+> 
+> 這個超讚，成功之後可以取代部份termux功能，trigger也能設定除了音量鍵以外的按鈕，但也是一樣做了好幾個版本之後一直沒有成功，如果需要這個功能的，我原本是用key mapper，推薦給你。雖然失敗了，但我還是覺得這個功能挺實用的，之後有空還是會考慮再嘗試看看，如果有大神願意幫忙，感激不盡
+> 
+> </details>
+> 
+> <details>
+> <summary>8. triggers可以排列組合形成新指令</summary>
+> 
+> <br>
+> 
+> 目前問題是不好命名，目前音量鍵兩個，排列組合只要設兩種，但有些手機物理按鈕超多，排列組合是比指數快很多的階乘，兼具易讀性與極簡的命名很難找，不喜歡key mapper那種trigger 1：(動作1)、(動作2)的這種，而且參數調整不好時，指令間容易相互干擾，不適合一般人使用，未來會考慮在Dev做做看，但應該不會發布在公開版本
+> 
+> </details>
 
 </details>
 
@@ -330,120 +394,120 @@ This app has replaced roughly 15 apps on my phone, each of which I carefully han
 
 For Pro and Max, only commands new relative to Min and Pro are listed; identical features are not repeated. The full command list can also be queried within the app using the "help" command. Detailed functionality is subject to actual use.
 
-<details>
-<summary>├─ Min</summary>
-
-<br>
-
-```
-alias - list all aliases or alias <name> <command> to set alias (use ; to set multiple)
-alias <name> - view one alias
-<app name> - launch an app (use exact name)
-apps - list installed apps
-help - show this list
-rm <alias name|toptext> - delete item
-status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version, enter an item name to check its individual status (view only)
-color (above|below|background) - Use hex color codes to modify the top, bottom, and background colors. Defaults: #FFFFFF|#00FF00|#000000
-fontsize - Modify the text display size. Range: positive integers from 8 to 40. Default: 18
-toptext <text|status item> - separate items with ;, wrapped/forced continuation lines start with |; use ;; to force a line break
-```
-
-</details>
-
-<details>
-<summary>├─ Pro</summary>
-
-<br>
-
-<details>
-<summary>│&nbsp;&nbsp;├─ help</summary>
-
-<br>
-
-```
-accessibility - list all accessibility features and explanations (enable "NPC's CLI Homescreen" in the system accessibility settings to use them)
-AOD - show full screen clock or timer or stopwatch
-BPM <non-negative integer> - start the metronome; BPM 0 stops it
-calc <expression> - use calculator powered by exp4j library
-calcs - show calculation history
-compass - show the current heading (degrees, 16-point direction)
-<date> - show that day's weekday (15821015-99991231) and lunar date (20260217-20560214)
-flash - show the torch state; add [on|1|off|0|toggle|-1] to switch
-gestures - show all gestures and their commands
-jot <name> <content> - write a note
-jotting <name> - view a note
-jottings - list all notes and their contents
-map|playstore|trans|yt <keyword> - search inside that app, web version as fallback
-music - show playback, add [on|1|off|0|toggle|-1] to play local tracks (input prev or next to switch)
-musics - list local audio files, then type a number to play
-rec [on|1|off|0|toggle|-1] - record voice
-recs - list recordings, then type a number to play
-rm <item> - delete item (alias|calcs|gesture|history|jotting|toptext)
-search <keyword> - search with the default engine (URL open directly)
-settings - list all settings
-status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version (also can enter item name to check its individual status) -> Brightness and volume are no longer read-only; other items can be adjusted by combining custom aliases with accessibility features.
-```
-
-</details>
-
-<details>
-<summary>│&nbsp;&nbsp;├─ accessibility</summary>
-
-<br>
-
-```
-back - press the back button
-home - press the home button
-quicksettings - open the quick-settings panel
-recents - open the recent apps overview
-statusbar - expand the notification shade
-trigger - listen for a pressed key and assign tap/2tap/hold commands to it
-triggers - list every key and switch them all on or off
-wait - pause that long before the next command (; separates the commands)
-vibrate - Adding vibration to the script appropriately can serve as a reminder
-x<number> y<number> - tap the screen at that point
-```
-
-</details>
-
-<details>
-<summary>│&nbsp;&nbsp;└─ settings</summary>
-
-<br>
-
-```
-addtimems - The time in status will include three-digit milliseconds (though it doesn't seem very accurate, so take it as a rough reference; actual experience may vary). Default: off
-batterystyle - Battery display can be numeric (num) or rounded blocks. There are two block styles: one shows the total number of blocks, with filled blocks representing remaining battery and hollow blocks representing depleted battery (mix); the other hides the hollow blocks entirely (sol). The total number of blocks can also be customized.
-history - Records the user's input history in a txt file. Default: off
-holdtime Default: 500ms  max2tapgap Default: 300ms
-musicautooff <always|auto|none> (Default: auto) - Automatically stops locally played music within this app when the specified condition occurs — a great feature for preventing social embarrassment (don't ask me how I know, or why I built this feature). always = no connected Bluetooth audio device, auto = Bluetooth on-to-off, none = never
-musicfolder, recfolder - You can set the folder for reading local music and the folder for storing recordings.
-refreshspeed (time|compass|other) - Set the refresh interval for items. Defaults: 1000ms|500ms|1s
-swipepx Default: 105  tempunit Default: °C
-toptextshow (music|rec|bpm) - Display in toptext when music, rec, or bpm is playing. All default to on.
-
-AOD holdtime Default: 500ms
-AODcolor (number|background) Default: #00FF00|#000000
-AODmax2tapgap Default: 300ms
-TMFS (timerflash) Default: 3
-TMFSgap (timerflashgap) Default: 0ms (meaning the total flash duration equals the vibration duration; set TMFS to 0 if you don't want flashing)
-TMVB (timervibrate) Default: 1000ms
-```
-
-</details>
-
-</details>
-
-<details>
-<summary>└─ Max</summary>
-
-<br>
-
-```
-translate - powered by Google ML Kit
-```
-
-</details>
+> <details>
+> <summary>Min</summary>
+> 
+> <br>
+> 
+> ```
+> alias - list all aliases or alias <name> <command> to set alias (use ; to set multiple)
+> alias <name> - view one alias
+> <app name> - launch an app (use exact name)
+> apps - list installed apps
+> help - show this list
+> rm <alias name|toptext> - delete item
+> status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version, enter an item name to check its individual status (view only)
+> color (above|below|background) - Use hex color codes to modify the top, bottom, and background colors. Defaults: #FFFFFF|#00FF00|#000000
+> fontsize - Modify the text display size. Range: positive integers from 8 to 40. Default: 18
+> toptext <text|status item> - separate items with ;, wrapped/forced continuation lines start with |; use ;; to force a line break
+> ```
+> 
+> </details>
+> 
+> <details>
+> <summary>Pro</summary>
+> 
+> <br>
+> 
+> > <details>
+> > <summary>help</summary>
+> > 
+> > <br>
+> > 
+> > ```
+> > accessibility - list all accessibility features and explanations (enable "NPC's CLI Homescreen" in the system accessibility settings to use them)
+> > AOD - show full screen clock or timer or stopwatch
+> > BPM <non-negative integer> - start the metronome; BPM 0 stops it
+> > calc <expression> - use calculator powered by exp4j library
+> > calcs - show calculation history
+> > compass - show the current heading (degrees, 16-point direction)
+> > <date> - show that day's weekday (15821015-99991231) and lunar date (20260217-20560214)
+> > flash - show the torch state; add [on|1|off|0|toggle|-1] to switch
+> > gestures - show all gestures and their commands
+> > jot <name> <content> - write a note
+> > jotting <name> - view a note
+> > jottings - list all notes and their contents
+> > map|playstore|trans|yt <keyword> - search inside that app, web version as fallback
+> > music - show playback, add [on|1|off|0|toggle|-1] to play local tracks (input prev or next to switch)
+> > musics - list local audio files, then type a number to play
+> > rec [on|1|off|0|toggle|-1] - record voice
+> > recs - list recordings, then type a number to play
+> > rm <item> - delete item (alias|calcs|gesture|history|jotting|toptext)
+> > search <keyword> - search with the default engine (URL open directly)
+> > settings - list all settings
+> > status - show date time battery device ram rom temp bright vol wifi data bluetooth gps flash version (also can enter item name to check its individual status) -> Brightness and volume are no longer read-only; other items can be adjusted by combining custom aliases with accessibility features.
+> > ```
+> > 
+> > </details>
+> > 
+> > <details>
+> > <summary>accessibility</summary>
+> > 
+> > <br>
+> > 
+> > ```
+> > back - press the back button
+> > home - press the home button
+> > quicksettings - open the quick-settings panel
+> > recents - open the recent apps overview
+> > statusbar - expand the notification shade
+> > trigger - listen for a pressed key and assign tap/2tap/hold commands to it
+> > triggers - list every key and switch them all on or off
+> > wait - pause that long before the next command (; separates the commands)
+> > vibrate - Adding vibration to the script appropriately can serve as a reminder
+> > x<number> y<number> - tap the screen at that point
+> > ```
+> > 
+> > </details>
+> > 
+> > <details>
+> > <summary>settings</summary>
+> > 
+> > <br>
+> > 
+> > ```
+> > addtimems - The time in status will include three-digit milliseconds (though it doesn't seem very accurate, so take it as a rough reference; actual experience may vary). Default: off
+> > batterystyle - Battery display can be numeric (num) or rounded blocks. There are two block styles: one shows the total number of blocks, with filled blocks representing remaining battery and hollow blocks representing depleted battery (mix); the other hides the hollow blocks entirely (sol). The total number of blocks can also be customized.
+> > history - Records the user's input history in a txt file. Default: off
+> > holdtime Default: 500ms  max2tapgap Default: 300ms
+> > musicautooff <always|auto|none> (Default: auto) - Automatically stops locally played music within this app when the specified condition occurs — a great feature for preventing social embarrassment (don't ask me how I know, or why I built this feature). always = no connected Bluetooth audio device, auto = Bluetooth on-to-off, none = never
+> > musicfolder, recfolder - You can set the folder for reading local music and the folder for storing recordings.
+> > refreshspeed (time|compass|other) - Set the refresh interval for items. Defaults: 1000ms|500ms|1s
+> > swipepx Default: 105  tempunit Default: °C
+> > toptextshow (music|rec|bpm) - Display in toptext when music, rec, or bpm is playing. All default to on.
+> > 
+> > AOD holdtime Default: 500ms
+> > AODcolor (number|background) Default: #00FF00|#000000
+> > AODmax2tapgap Default: 300ms
+> > TMFS (timerflash) Default: 3
+> > TMFSgap (timerflashgap) Default: 0ms (meaning the total flash duration equals the vibration duration; set TMFS to 0 if you don't want flashing)
+> > TMVB (timervibrate) Default: 1000ms
+> > ```
+> > 
+> > </details>
+> 
+> </details>
+> 
+> <details>
+> <summary>Max</summary>
+> 
+> <br>
+> 
+> ```
+> translate - powered by Google ML Kit
+> ```
+> 
+> </details>
 
 </details>
 
@@ -454,37 +518,42 @@ translate - powered by Google ML Kit
 
 Of course, you can decline them, but features that require those permissions won't be available. Pro and Max only list permissions beyond those of Min and Pro, respectively.
 
-<details>
-<summary>├─ Min</summary>
-
-<br>
-
-Detect nearby devices — reads Wi-Fi and Bluetooth status, though it seems like detection still works even if you decline 🤔
-
-</details>
-
-<details>
-<summary>├─ Pro</summary>
-
-<br>
-
-Read device files — used by the music and rec features; a necessary permission for reading and writing.
-Notifications — apps that can record and play audio seem to require notification permission on newer Android versions to prove the user initiated the action and the app isn't doing things in the background.
-Microphone — recording requires the microphone.
-Adjust settings — allows adjusting device brightness and volume.
-Vibration — currently only the AOD timer has vibration enabled by default; not used in many places unless you frequently use the accessibility vibrate command in your alias scripts.
-Accessibility — only accessibility features require the accessibility permission.
-
-</details>
-
-<details>
-<summary>└─ Max</summary>
-
-<br>
-
-It seems network permission is needed for downloading the local translation package, but it's not used anywhere else.
-
-</details>
+> <details>
+> <summary>Min</summary>
+> 
+> <br>
+> 
+> Detect nearby devices — reads Wi-Fi and Bluetooth status, though it seems like detection still works even if you decline 🤔
+> 
+> </details>
+> 
+> <details>
+> <summary>Pro</summary>
+> 
+> <br>
+> 
+> Read device files — used by the music and rec features; a necessary permission for reading and writing.
+> 
+> Notifications — apps that can record and play audio seem to require notification permission on newer Android versions to prove the user initiated the action and the app isn't doing things in the background.
+> 
+> Microphone — recording requires the microphone.
+> 
+> Adjust settings — allows adjusting device brightness and volume.
+> 
+> Vibration — currently only the AOD timer has vibration enabled by default; not used in many places unless you frequently use the accessibility vibrate command in your alias scripts.
+> 
+> Accessibility — only accessibility features require the accessibility permission.
+> 
+> </details>
+> 
+> <details>
+> <summary>Max</summary>
+> 
+> <br>
+> 
+> It seems network permission is needed for downloading the local translation package, but it's not used anywhere else.
+> 
+> </details>
 
 </details>
 
@@ -513,24 +582,83 @@ It seems network permission is needed for downloading the local translation pack
 
 <br>
 
-**1. Multi-language support:** Although the author is a native Chinese speaker with terrible English 🤡, early versions once aimed to support multiple languages, starting with English, Traditional Chinese, and Simplified Chinese, then expanding based on demand. However, as features grew more numerous and complex, some commands became quite complicated to translate into Chinese, and some I honestly have no idea how to translate 💀. On top of that, writing a bunch of mapped commands would significantly increase the app size and reduce runtime efficiency. So, in the pursuit of ultimate efficiency, I ultimately decided to keep everything in English. The author will not be updating this feature.
-
-**2. Changing the jottings storage location:** Just like musicfolder and recfolder, the author once implemented a jottingsfolder, but no matter how I tried or how many times I rewrote the code, the app couldn't read its own txt files from that location. I eventually gave up and am waiting for an expert to point me in the right direction.
-
-**3. Simple offline games:** Games like Snake or Tetris could be nicely rendered in this CLI interface. However, the author doesn't play games, so at best I'd play for a bit and then let it gather dust. The in-game logic commands are also quite numerous, and I have a feeling that if I tried to unify the design language, I'd debug myself into a breakdown. Plus, there's the same issue of increased app size. Not considering this for now.
-
-**4. Local PDF file reading:** I tried using the Android Jetpack PDF Viewer module (androidx.pdf) Beta (1.0.0-beta01), which I had been following since 2024 and which was just released (August 27, 2026) around the time I was building the app. But for some reason, after debugging through several versions, it either froze or crashed. I lost my sanity and abandoned this feature entirely. Once again, begging for an expert's guidance 😭
-
-**5. Better compatibility:** Starting from supporting only Android 16, the app has now expanded to support Android 5–17 for Min, and Android 7–17 for Pro and Max. Originally, the AI gave me builds for v7a, v8a, x86, and x86-64, but in the end, to keep the size as small as possible and since my original intention was to serve phones, I kept only v8a.
--> First, x86 can easily run Linux, which has many forked distributions that I think are better than my app, and they're true CLI (when running on Android, the surface may look like CLI, but the actual computation and rendering logic still operates within the very power-hungry GUI). Those who still find those unsatisfactory should have enough skill to build their own with LFS (Linux From Scratch), so there's no need for me to bother.
-Second, in recent years, even the more open phone manufacturers have made rooting increasingly difficult. Under the constraint of staying on stock Android, I feel there's currently a product gap and void in this area for phones.
-Lastly, Apple's permission controls seem quite complex. Sorry, iPhone users 🥺 — I did once want to make this available to you. Let's see if the ecosystem opens up a bit in the future!
-
-**6. Using APIs for weather and cloud AI:** The advantage is achieving the same or even more and better features while maintaining an ultra-small footprint. The downside is that it requires an internet connection. I originally intended to build a completely offline app, but this is really quite appealing. Currently being tested in a Dev (unreleased) build based on Pro. I've tried the Groq and Central Weather Administration APIs so far. If you have any useful APIs to recommend or want to try out Dev, feel free to DM the author.
-
-**7. Obtaining ADB permissions:** This one is amazing — if successful, it could replace part of Termux's functionality, and triggers could be set for buttons other than the volume keys. But similarly, after several iterations, I never got it working. If you need this feature, I originally used Key Mapper — recommended. Although I failed, I still think this feature is quite practical, so I might try again when I have time. If any experts are willing to help, I'd be extremely grateful.
-
-**8. Combining triggers to form new commands:** The current problem is that they're hard to name. With just two volume keys, only two combinations need to be defined, but some phones have tons of physical buttons, and the combinations grow factorially — much faster than exponentially. It's very hard to find naming schemes that are both readable and minimal. I don't like Key Mapper's style of "trigger 1: (action 1), (action 2)," and when parameters aren't tuned well, commands can easily interfere with each other, making it unsuitable for general users. I'll consider giving it a shot in the Dev build in the future, but it likely won't be released in the public version.
+> <details>
+> <summary>1. Multi-language support</summary>
+> 
+> <br>
+> 
+> Although the author is a native Chinese speaker with terrible English 🤡, early versions once aimed to support multiple languages, starting with English, Traditional Chinese, and Simplified Chinese, then expanding based on demand. However, as features grew more numerous and complex, some commands became quite complicated to translate into Chinese, and some I honestly have no idea how to translate 💀. On top of that, writing a bunch of mapped commands would significantly increase the app size and reduce runtime efficiency. So, in the pursuit of ultimate efficiency, I ultimately decided to keep everything in English. The author will not be updating this feature.
+> 
+> </details>
+> 
+> <details>
+> <summary>2. Changing the jottings storage location</summary>
+> 
+> <br>
+> 
+> Just like musicfolder and recfolder, the author once implemented a jottingsfolder, but no matter how I tried or how many times I rewrote the code, the app couldn't read its own txt files from that location. I eventually gave up and am waiting for an expert to point me in the right direction.
+> 
+> </details>
+> 
+> <details>
+> <summary>3. Simple offline games</summary>
+> 
+> <br>
+> 
+> Games like Snake or Tetris could be nicely rendered in this CLI interface. However, the author doesn't play games, so at best I'd play for a bit and then let it gather dust. The in-game logic commands are also quite numerous, and I have a feeling that if I tried to unify the design language, I'd debug myself into a breakdown. Plus, there's the same issue of increased app size. Not considering this for now.
+> 
+> </details>
+> 
+> <details>
+> <summary>4. Local PDF file reading</summary>
+> 
+> <br>
+> 
+> I tried using the Android Jetpack PDF Viewer module (androidx.pdf) Beta (1.0.0-beta01), which I had been following since 2024 and which was just released (August 27, 2026) around the time I was building the app. But for some reason, after debugging through several versions, it either froze or crashed. I lost my sanity and abandoned this feature entirely. Once again, begging for an expert's guidance 😭
+> 
+> </details>
+> 
+> <details>
+> <summary>5. Better compatibility</summary>
+> 
+> <br>
+> 
+> Starting from supporting only Android 16, the app has now expanded to support Android 5–17 for Min, and Android 7–17 for Pro and Max. Originally, the AI gave me builds for v7a, v8a, x86, and x86-64, but in the end, to keep the size as small as possible and since my original intention was to serve phones, I kept only v8a.
+> 
+> -> First, x86 can easily run Linux, which has many forked distributions that I think are better than my app, and they're true CLI (when running on Android, the surface may look like CLI, but the actual computation and rendering logic still operates within the very power-hungry GUI). Those who still find those unsatisfactory should have enough skill to build their own with LFS (Linux From Scratch), so there's no need for me to bother.
+> 
+> Second, in recent years, even the more open phone manufacturers have made rooting increasingly difficult. Under the constraint of staying on stock Android, I feel there's currently a product gap and void in this area for phones.
+> 
+> Lastly, Apple's permission controls seem quite complex. Sorry, iPhone users 🥺 — I did once want to make this available to you. Let's see if the ecosystem opens up a bit in the future!
+> 
+> </details>
+> 
+> <details>
+> <summary>6. Using APIs for weather and cloud AI</summary>
+> 
+> <br>
+> 
+> The advantage is achieving the same or even more and better features while maintaining an ultra-small footprint. The downside is that it requires an internet connection. I originally intended to build a completely offline app, but this is really quite appealing. Currently being tested in a Dev (unreleased) build based on Pro. I've tried the Groq and Central Weather Administration APIs so far. If you have any useful APIs to recommend or want to try out Dev, feel free to DM the author.
+> 
+> </details>
+> 
+> <details>
+> <summary>7. Obtaining ADB permissions</summary>
+> 
+> <br>
+> 
+> This one is amazing — if successful, it could replace part of Termux's functionality, and triggers could be set for buttons other than the volume keys. But similarly, after several iterations, I never got it working. If you need this feature, I originally used Key Mapper — recommended. Although I failed, I still think this feature is quite practical, so I might try again when I have time. If any experts are willing to help, I'd be extremely grateful.
+> 
+> </details>
+> 
+> <details>
+> <summary>8. Combining triggers to form new commands</summary>
+> 
+> <br>
+> 
+> The current problem is that they're hard to name. With just two volume keys, only two combinations need to be defined, but some phones have tons of physical buttons, and the combinations grow factorially — much faster than exponentially. It's very hard to find naming schemes that are both readable and minimal. I don't like Key Mapper's style of "trigger 1: (action 1), (action 2)," and when parameters aren't tuned well, commands can easily interfere with each other, making it unsuitable for general users. I'll consider giving it a shot in the Dev build in the future, but it likely won't be released in the public version.
+> 
+> </details>
 
 </details>
 
