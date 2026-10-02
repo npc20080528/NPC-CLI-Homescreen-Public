@@ -282,17 +282,48 @@ Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出�
 > </details>
 > 
 > <details>
-> <summary>5. 更好的兼容性</summary>
+> <summary>5. 更好的兼容性</summary>> <details>
+> <summary>iOS</summary>
 > 
 > <br>
 > 
-> 從原本只支援安卓16，到目前已經拓展到Min支援安卓5-17，Pro與Max支援安卓7-17，原本AI有給我v7a、v8a、X86、X86-64，最後我為了極小體積，加上我的初衷是為手機提供服務，最後只保留v8a。
+> 因生態的隔閡，抱歉了 iPhone 用戶🥺，我曾經是有想讓你們可以用的，看未來生態能不能開放一點吧！如果有很多人想用，我也會嘗試做做看。
 > 
-> -> 首先，X86可以輕鬆跑linux，其中有很多我覺得比我的程式更好用的分支版本，而且是真正的CLI(安卓運行時，看似表面是CLI，但實際運算與渲染的邏輯還是維持在十分耗電的GUI)，如果還是覺得不好用的人，程度應該足以用LFS(linux from scratch)自己做了，我也就不用做了。
+> </details>
 > 
-> 其次，安卓近幾年連幾個比較開放的手機廠商都越來越難root，只能維持在安卓原生版本的情況下，我覺得目前手機在這方面有產品斷層與空洞。
+> <details>
+> <summary>X86</summary>
 > 
-> 最後，蘋果的權限控制好像比較複雜，抱歉了iphone用戶🥺，我曾經是有想讓你們可以用的，看未來生態能不能開放一點吧！
+> <br>
+> 
+> 原本 AI 有給 v7a、v8a、x86、x86-64，但最後只保留了 v8a，因為：
+> 
+> ・電腦可用 Linux，其中有很多分支我覺得比我的程式更好用、更適合電腦，且是真正的 CLI（安卓看似表面是 CLI，但實際渲染邏輯仍是 GUI）
+> ・若覺得不好用，程度應該足以用 LFS（Linux From Scratch）自製
+> ・accessibility 只有安卓能用，鍵盤不確定能不能設 triggers（我沒有電腦）
+> ・為了極小體積
+> 
+> </details>
+> 
+> <details>
+> <summary>安卓</summary>
+> 
+> <br>
+> 
+> 近幾年連幾個比較開放的手機廠商都越來越難 root，目前市面上大多數安卓手機只能維持在原生系統，我覺得安卓手機在這方面有產品斷層與空洞。
+> 
+> 我的手機也是安卓 16，所以主要以此為基礎開發。從原本只支援安卓 16，到目前已拓展到 Min 支援安卓 5–17，Pro 與 Max 支援安卓 7–17。
+> 
+> </details>
+> 
+> <details>
+> <summary>鴻蒙</summary>
+> 
+> <br>
+> 
+> 我承認我沒有很了解這個系統的特性跟底層邏輯，所以目前有點難下指令開發，期待大佬的加入一起共創未來！
+> 
+> </details>
 > 
 > </details>
 > 
@@ -620,19 +651,48 @@ Of course, you can decline them, but features that require those permissions won
 > 
 > <details>
 > <summary>5. Better compatibility</summary>
+> <details>
+> <summary>iOS</summary>
 > 
 > <br>
 > 
-> Starting from supporting only Android 16, the app has now expanded to support Android 5–17 for Min, and Android 7–17 for Pro and Max. Originally, the AI gave me builds for v7a, v8a, x86, and x86-64, but in the end, to keep the size as small as possible and since my original intention was to serve phones, I kept only v8a.
-> 
-> -> First, x86 can easily run Linux, which has many forked distributions that I think are better than my app, and they're true CLI (when running on Android, the surface may look like CLI, but the actual computation and rendering logic still operates within the very power-hungry GUI). Those who still find those unsatisfactory should have enough skill to build their own with LFS (Linux From Scratch), so there's no need for me to bother.
-> 
-> Second, in recent years, even the more open phone manufacturers have made rooting increasingly difficult. Under the constraint of staying on stock Android, I feel there's currently a product gap and void in this area for phones.
-> 
-> Lastly, Apple's permission controls seem quite complex. Sorry, iPhone users 🥺 — I did once want to make this available to you. Let's see if the ecosystem opens up a bit in the future!
+> Due to the ecosystem barrier, sorry iPhone users 🥺. I did once want to make this available to you — let's see if the ecosystem opens up a bit in the future! If enough people want it, I'll also try to give it a shot.
 > 
 > </details>
 > 
+> <details>
+> <summary>x86</summary>
+> 
+> <br>
+> 
+> Originally, the AI gave me builds for v7a, v8a, x86, and x86-64, but in the end I kept only v8a, because:
+> 
+> ・Computers can run Linux, and I think many of its distributions are better and more suitable for computers than my app, and they are true CLI (on Android, the surface looks like CLI, but the actual rendering logic still runs on GUI)
+> ・If those still don't satisfy you, your skill level should be enough to build your own with LFS (Linux From Scratch)
+> ・accessibility only works on Android, and I'm not sure if keyboards can be set as triggers (I don't own a computer)
+> ・For an ultra-small footprint
+> 
+> </details>
+> 
+> <details>
+> <summary>Android</summary>
+> 
+> <br>
+> 
+> In recent years, even the more open phone manufacturers have made rooting increasingly difficult. Most Android phones on the market can only stay on stock systems, and I feel there's currently a product gap and void in this area for Android phones.
+> 
+> My phone also runs Android 16, so I developed primarily based on it. Starting from supporting only Android 16, the app has now expanded to support Android 5–17 for Min, and Android 7–17 for Pro and Max.
+> 
+> </details>
+> 
+> <details>
+> <summary>HarmonyOS</summary>
+> 
+> <br>
+> 
+> I admit I don't really understand the characteristics and underlying logic of this system, so it's currently hard for me to develop for it. Looking forward to experts joining in to create the future together!
+> 
+> </details>
 > <details>
 > <summary>6. Using APIs for weather and cloud AI</summary>
 > 
