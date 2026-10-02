@@ -282,7 +282,6 @@ Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出�
 > </details>
 > 
 > <details>
-> <details>
 > <summary>5. 更好的兼容性</summary>
 > 
 > <br>
@@ -377,7 +376,6 @@ Email：fanpao757@gmail.com
 
 </details>
 
-</details>
 ---
 
 <details>
