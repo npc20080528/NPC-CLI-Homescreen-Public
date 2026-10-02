@@ -376,6 +376,8 @@ Email：fanpao757@gmail.com
 
 </details>
 
+</details>
+
 ---
 
 <details>
@@ -653,8 +655,9 @@ Of course, you can decline them, but features that require those permissions won
 > 
 > <details>
 > <summary>5. Better compatibility</summary>
-> <details>
-> <summary>iOS</summary>
+> 
+> <br>
+> 
 > > <details>
 > > <summary>iOS</summary>
 > > 
@@ -697,6 +700,10 @@ Of course, you can decline them, but features that require those permissions won
 > > I admit I don't really understand the characteristics and underlying logic of this system, so it's currently hard for me to develop for it. Looking forward to experts joining in to create the future together!
 > > 
 > > </details>
+> 
+> </details>
+> 
+> <details>
 > <summary>6. Using APIs for weather and cloud AI</summary>
 > 
 > <br>
