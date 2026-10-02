@@ -282,14 +282,11 @@ Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出�
 > </details>
 > 
 > <details>
-> <summary>5. 更好的兼容性</summary>> <details>
-> <summary>iOS</summary>
+> <details>
+> <summary>5. 更好的兼容性</summary>
 > 
 > <br>
 > 
-> 因生態的隔閡，抱歉了 iPhone 用戶🥺，我曾經是有想讓你們可以用的，看未來生態能不能開放一點吧！如果有很多人想用，我也會嘗試做做看。
-> 
-> </details>
 > > <details>
 > > <summary>iOS</summary>
 > > 
@@ -332,13 +329,6 @@ Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出�
 > > 我承認我沒有很了解這個系統的特性跟底層邏輯，所以目前有點難下指令開發，期待大佬的加入一起共創未來！
 > > 
 > > </details>
-> > <summary>鴻蒙</summary>
-> 
-> <br>
-> 
-> 我承認我沒有很了解這個系統的特性跟底層邏輯，所以目前有點難下指令開發，期待大佬的加入一起共創未來！
-> 
-> </details>
 > 
 > </details>
 > 
@@ -388,7 +378,6 @@ Email：fanpao757@gmail.com
 </details>
 
 </details>
-
 ---
 
 <details>
