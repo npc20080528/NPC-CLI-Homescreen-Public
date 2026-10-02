@@ -304,7 +304,7 @@ Pro與Max只列出相對Min與Pro的新增指令，相同功能不重複列出�
 > > 
 > > ・電腦可用 Linux，其中有很多分支我覺得比我的程式更好用、更適合電腦，且是真正的 CLI（安卓看似表面是 CLI，但實際渲染邏輯仍是 GUI）
 > > ・若覺得不好用，程度應該足以用 LFS（Linux From Scratch）自製
-> > ・accessibility 只有安卓能用，鍵盤不確定能不能設 triggers（我沒有電腦）
+> > ・accessibility只有安卓能用，鍵盤不確定能不能設 triggers（我沒有電腦）
 > > ・為了極小體積
 > > 
 > > </details>
